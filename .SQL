@@ -1,7 +1,7 @@
 SELECT CustomerName
 FROM Customers 
-WHERE CustomerID 
-IS (SELECT CustomerID From Orders WHERE OrderID IS 10310)
+WHERE CustomerID IS
+(SELECT CustomerID From Orders WHERE OrderID IS 10310)
 
 SELECT Address 
 FROM Suppliers
